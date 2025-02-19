@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>User Registration Form</h2>
+
+        <!-- User Form in Table Layout -->
+        <form id="userForm">
+            <table class="form-table">
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" required></td>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="text" id="gender" readonly>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ic">IC Number:</label></td>
+                    <td><input type="text" id="ic" required></td>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" id="state" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" required></textarea></td>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" readonly></td>
+                </tr>
+            </table>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <h2>Stored Data</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>IC Number</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>State</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable"> 
+            <!-- Submitted data will appear here -->
+        </tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

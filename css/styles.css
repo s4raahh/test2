@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Wrapper */
+.form-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Table Styles */
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table td {
+    padding: 10px;
+}
+
+input[readonly] {
+    background-color: #e0e0e0;
+    /* Light grey */
+    color: #333;
+    /* Darker text for readability */
+    cursor: not-allowed;
+    /* Show that it's not editable */
+    border: 1px solid #ccc;
+    /* Keep border subtle */
+    padding: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Data Table Styles */
+.data-table {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: lightgray;
+}
